@@ -1,0 +1,79 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFE2D1; /* Light Peach */
+    color: #5E4C5A; /* Dark Purple */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #E1F0C4; /* Light Green */
+    border-bottom: 2px solid #55917F; /* Teal */
+}
+
+header .portrait {
+    width: 150px;
+    border-radius: 50%;
+}
+
+nav {
+    background-color: #55917F; /* Teal */
+    color: #FFFFFF; /* White */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FFFFFF; /* White */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+}
+
+section h2 {
+    border-bottom: 2px solid #6BAB90; /* Medium Green */
+    padding-bottom: 10px;
+    color: #55917F; /* Teal */
+}
+
+.project {
+    background-color: #FFFFFF; /* White */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #6BAB90; /* Medium Green */
+    border-radius: 5px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 200px;
+    margin: 5px;
+    border: 2px solid #6BAB90; /* Medium Green */
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #55917F; /* Teal */
+    color: #FFFFFF; /* White */
+}
