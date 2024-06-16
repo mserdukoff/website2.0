@@ -8,58 +8,68 @@
 </head>
 <body>
     <header>
-        <img src="portrait.JPG" alt="Your Portrait" class="portrait">
+        <img src="your-portrait.jpg" alt="Your Portrait" class="portrait">
         <h1>Your Name</h1>
         <p>Recent Computer Science Graduate</p>
     </header>
     
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#photography">Photography</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#photography">Photography</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    
+        <main>
+            <section id="home">
+                <h2>Welcome to My Portfolio</h2>
+                <p>Brief introduction about yourself.</p>
+            </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Your background information.</p>
-        <p>Education and skills.</p>
-    </section>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Your background information.</p>
+                <p>Education and skills.</p>
+            </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project Title</h3>
-            <p>Project description and technologies used.</p>
-            <a href="project-link">View Project</a>
-        </div>
-    </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3>Project Title</h3>
+                    <p>Project description and technologies used.</p>
+                    <a href="project-link">View Project</a>
+                </div>
+            </section>
 
-    <section id="photography">
-        <h2>Photography</h2>
-        <div class="gallery">
-            <img src="photo1.jpg" alt="Photo 1">
-            <img src="photo2.jpg" alt="Photo 2">
-            <!-- Add more photos as needed -->
-        </div>
-    </section>
+            <section id="photography">
+                <h2>Photography</h2>
+                <div class="gallery">
+                    <img src="photo1.jpg" alt="Photo 1">
+                    <img src="photo2.jpg" alt="Photo 2">
+                    <!-- Add more photos as needed -->
+                </div>
+            </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <form action="submit-form" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-        <p>Follow me on:</p>
-        <a href="social-link">Social Media</a>
-    </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <form action="submit-form" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+                <p>Follow me on:</p>
+                <a href="social-link">Social Media</a>
+            </section>
+        </main>
+    </div>
 
     <footer>
         <p>&copy; 2024 Your Name</p>

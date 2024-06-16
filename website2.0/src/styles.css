@@ -11,6 +11,8 @@ header {
     padding: 20px;
     background-color: #E1F0C4; /* Light Green */
     border-bottom: 2px solid #55917F; /* Teal */
+    position: relative;
+    overflow: hidden;
 }
 
 header .portrait {
@@ -27,6 +29,10 @@ header .portrait {
     flex: 1 1 250px;
     background-color: #55917F; /* Teal */
     padding: 20px;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 
 .sidebar ul {
@@ -48,6 +54,7 @@ header .portrait {
 main {
     flex: 3 1 700px;
     padding: 20px;
+    margin-left: 250px;
 }
 
 section {
@@ -125,9 +132,12 @@ footer {
 
     .sidebar {
         flex: 1 1 auto;
+        position: relative;
+        height: auto;
     }
 
     main {
         flex: 1 1 auto;
+        margin-left: 0;
     }
 }
