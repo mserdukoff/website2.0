@@ -23,8 +23,8 @@
             <h3>Recent Computer Science/Data Science Graduate</h3>
             <p>Aspiring Data Scientist and ML Engineer | Proficient in Python, PyTorch, and MLFlow | Data Analytics and Machine Learning Enthusiast</p>
             <div class="btn-box">
-                <a href="#">Placeholder</a>
-                <a href="#">Placeholder</a>
+                <a href="https://www.linkedin.com/in/matt-serdukoff-775030190/">LinkedIn</a>
+                <a href="https://github.com/mserdukoff">GitHub</a>
             </div>
         </div>
         <div class="home-sci">
@@ -36,27 +36,97 @@
     <section class="about" id="about">
         <h2 class="heading"></h2>
         <div class="about-img">
-            <img src="me.png">
+            <img src="me.png" alt="About me image">
             <span class="circle-spin"></span>
         </div>
         <div class="about-content">
             <h3>About Me</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consequatur atque reprehenderit molestias nesciunt illo beatae fugiat iure sunt sint error molestiae numquam quasi unde recusandae eaque, excepturi quisquam tempora.</p>
+            <p>I recently graduated with a bachelor's degree in Computer Science, specializing in Data Science, from the University of Massachusetts Lowell. I am passionate about using machine learning, natural language processing, and AI to solve real-world problems. With a strong foundation in Python, PyTorch, Scikit-learn, and data visualization tools, I've completed projects demonstrating my ability to analyze data and deliver actionable insights.</p>
         </div>
     </section>
     <section class="projects" id="projects">
-        <h2 class="heading">My Journey</h2>
-        <div class="education-row">
-            <div class="education-column">
-                <h2 class="title">Education</h2>
-                <div class="education-box">
-                    <div class="content">
-                        <h3>Bachelor's Degree - Computer Science</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui quaerat itaque, porro officiis eaque quod necessitatibus rerum perspiciatis nesciunt ad, similique optio deserunt exercitationem eligendi tenetur molestiae hic esse eos.</p>
-                    </div>
-                </div>
+        <h2 class="heading"></h2>
+        
+        <!-- First Project -->
+        <div class="project-category">
+            <div class="projects-content">
+                <h3>Hime Skin Analysis Application</h3>
+                <p>In collaboration with another cofounder and third-party contractors helped build and integrate classification
+                    models with computer vision and generative AI functionality for a mobile and web application for AI assisted
+                    dermatological examination and evaluation, with the ability to interact with certified specialists.</p>
+            </div>
+            <div class="projects-img">
+                <img src="screenshot.PNG" alt="Screenshot of App">
             </div>
         </div>
+        
+        <!-- Second Project -->
+        <div class="project-category larger-image">
+            <div class="projects-content">
+                <h3>Predicting Cardiovascular Disease</h3>
+                <p>Using a dataset containing various symptoms and vitals, I wrote code in Jupyter Notebook that utilized Naïve Bayes, Logistic Regression, Linear Regression, and Decision Tree models to predict the presence of cardiovascular disease.</p>
+            </div>
+            <div class="projects-img">
+                <img src="sourcecode.png" alt="Screenshot of Project">
+            </div>
+        </div>
+        
+        <!-- Third Project -->
+        <div class="project-category larger-image">
+            <div class="projects-content">
+                <h3>Learning a Children's Book using NLP</h3>
+                <p>This project is from my Natural Language Processing class, it reads from a dataset that contains a diverse collection of text data from various children’s books providing a valuable resource for NLP tasks tailored to young readers. Questions are categorized into four types: V (verbs), P (pronouns), NE (named entities), and CN (common nouns). For this project, only CN was utilized</p>
+            </div>
+            <div class="projects-img">
+                <img src="Carbon source code.png" alt="Screenshot of Code">
+            </div>
+        </div>
+    </section>
+
+    <section class="photography" id="photography">
+        <h2 class="heading">Photography</h2>
+        <div class="gallery">
+            <span style="--i:1"><img src="photo1.jpg" alt="Photo 1"></span>
+            <span style="--i:2"><img src="photo2.jpg" alt="Photo 2"></span>
+            <span style="--i:3"><img src="photo3.jpg" alt="Photo 3"></span>
+            <span style="--i:4"><img src="photo4.jpg" alt="Photo 4"></span>
+            <span style="--i:5"><img src="photo5.jpg" alt="Photo 5"></span>
+            <span style="--i:6"><img src="photo6.jpg" alt="Photo 6"></span>
+            <span style="--i:7"><img src="photo7.jpg" alt="Photo 7"></span>
+            <span style="--i:8"><img src="photo8.jpg" alt="Photo 8"></span>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact Me</h2> 
+        <form action="https://formspree.io/f/mayrrzab" method="POST">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="tel" name="phone" placeholder="Mobile Number">
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" name="subject" placeholder="Email Subject" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+            <div class="textarea-field">
+                <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <span class="focus"></span>
+            </div>
+            <div class="btn-box">
+                <button type="submit" class="contact-btn">Submit</button>
+            </div>
+        </form>
     </section>
     <script src="script.js"></script>
 </body>

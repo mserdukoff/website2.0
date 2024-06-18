@@ -10,7 +10,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body {
     background: #081b29;
     color: #ededed;
@@ -157,7 +156,7 @@ body {
     position: relative;
     font-size: 16px;
     margin-top: 40px 0 40px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 
 .home-content p::before {
@@ -246,65 +245,243 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row; /* Ensure the layout is horizontal */
     gap: 2rem;
     padding-bottom: 6rem;
 }
 
-.heading {
-    font-size: 4rem;
-    margin-bottom: 3rem;
-    text-align: center;
-}
-
 .about-img {
-    position:relative;
+    position: relative;
     width: 25rem;
     height: 25rem;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-right: 2rem; /* Add margin to move it to the left */
 }
 
 .about-img img {
     width: 100%;
     border-radius: 50%;
-    border: 0.2rem solid rgb(122, 110, 88)
+    border: 0.2rem solid rgb(122, 110, 88);
 }
 
-/* .about-img .circle-spin {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(0);
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border-top: 0.2rem solid red;
-    border-bottom: 0.2rem solid red;
-    border-left: 0.2rem solid red;
-    border-right: 0.2 rem solid red'
-} */
+.about-content {
+    max-width: 50%; /* Ensure the content doesn't take up too much space */
+    margin-left: 2rem; /* Add margin to align it properly */
+}
 
 .about-content h3 {
     font-size: 2.6rem;
-    text-align: center;
+    text-align: left;
+    margin-left: 0; /* Remove extra margin */
 }
+
 .about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
-    text-align: center;
-    margin-left:10%;
-    margin-right:10%;
+    text-align: left;
+    margin-left: 0; /* Ensure paragraphs are aligned with the heading */
+    margin-right: 10%;
 }
 
-/* .btns-box.btns {
-    display: inline-block;
-    width: 15em;
+.projects {
+    display: flex;
+    flex-direction: column; /* Ensure the layout is vertical */
+    gap: 4rem; /* Add space between project categories */
+    padding-bottom: 6rem;
+    align-items: center;
+}
+
+.project-category {
+    display: flex;
+    justify-content: space-between; /* Space between content and image */
+    align-items: center;
+    flex-direction: row; /* Ensure the layout is horizontal */
+    gap: 2rem;
+    width: 80%; /* Limit the width of each project category */
+}
+
+.project-category .projects-content {
+    max-width: 50%; /* Ensure the content doesn't take up too much space */
+    flex: 1; /* Flex-grow for content to take up remaining space */
+}
+
+.project-category .projects-img {
+    position: relative;
+    width: 25rem; /* Set a fixed width */
+    flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.project-category .projects-img img {
+    width: 100%; /* Scale the image to fit the container */
+    height: auto; /* Maintain aspect ratio */
+    border: 0.2rem solid rgb(48, 35, 93);
+}
+
+.project-category .projects-content h3 {
+    font-size: 2.6rem;
+    text-align: left;
+    margin-left: 0; /* Remove extra margin */
+}
+
+.project-category .projects-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+    text-align: left;
+    margin-left: 0; /* Ensure paragraphs are aligned with the heading */
+    margin-right: 10%;
+}
+
+.larger-image .projects-img {
+    width: 35rem; /* Increase width for larger images */
+}
+
+.larger-image .projects-img img {
+    width: 100%; /* Ensure the image scales within the new width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.photography {
+    padding: 2rem 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photography .heading {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+}
+
+.gallery {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotate 35s linear infinite;
+    margin-bottom: 4rem;
+}
+
+@keyframes rotate {
+    from {
+        transform: perspective(1200px) rotateY(0deg);
+    }
+    to {
+        transform: perspective(1200px) rotateY(360deg);
+    }
+}
+
+.gallery span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(380px);
+}
+
+.gallery span img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact {
+    min-height: auto;
+    padding-bottom: 7rem;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 2rem; /* Adjust as needed for spacing */
+}
+
+
+.contact form {
+    max-width: 70rem;
+    margin: 0 auto;
     text-align: center;
 }
 
-.btns-box.btns a::before {
-    background-color:#00abf0;
-} */
+.contact form .input-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box .input-field {
+    position: negative;
+    width: 49%;
+    margin: 0.8rem 0;
+}
+
+.contact form .input-box .input-field input,
+.contact form .textarea-field textarea {
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color:#00abf0;
+    background:transparent;
+    border-radius: 0.6rem;
+    border: 0.2rem solid #00abf0;
+}
+
+.contact form .input-box .input-field input::placeholder,
+.contact form .textarea-field textarea::placeholder {
+    color: #00abf0
+}
+
+.contact form .textarea-field {
+    position: relative;
+    margin: 0.8rem 0  2.7rem;
+    display:flex;
+}
+
+.contact form .textarea-field textarea {
+    resize: none;
+}
+
+.contact-btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 80px;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer; /* Ensure it's clear that the element is clickable */
+}
+
+.contact-btn:hover {
+    color: #00abf0;
+}
+
+.contact-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.contact-btn:hover::before {
+    width: 100%;
+}
